@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>JavaScript Copy</title>
+  <style media="screen">
+    body {
+      font-size: 8px;
+    }
+
+    .bgbar {
+      border-top: 3px solid #0666EF;
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-top: 5px;
+    }
+
+    .rgbar {
+      border-top: 3px solid #DB4326;
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-top: 5px;
+    }
+
+    .ygbar {
+      border-top: 3px solid #FFB600;
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-top: 5px;
+    }
+
+    .ggbar {
+      border-top: 3px solid #009852;
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-top: 5px;
+    }
+
+    #sig:hover {
+      border: 1px solid #F0F0F0;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="sig">
+    <div>
+      <span class="bgbar">Ashutosh Singh</span><span class="rgbar">Business System Analyst</span><span class="ygbar"><a href="mailto:ashutoshsi@google.com">ashutoshsi@google.com</a></span><span class="ggbar"><a href="tel:4085440760">(408) 544-0760</a></span>
+    </div>
+  </div>
+  <p>
+    <button id="btncp">
+      Copy
+    </button>
+  </p>
+  <script type="text/javascript">
+    var copyEmailBtn = document.getElementById('btncp');
+    copyEmailBtn.addEventListener('click', function(event) {
+      // Select the email link anchor text
+      var emailLink = document.getElementById('sig');
+      var range = document.createRange();
+      range.selectNode(emailLink);
+      window.getSelection().addRange(range);
+
+      try {
+        // Now that we've selected the anchor text, execute the copy command
+        var successful = document.execCommand('copy');
+        var msg = successful ? 'successful' : 'unsuccessful';
+        console.log('Copy email command was ' + msg);
+      } catch (err) {
+        console.log('Oops, unable to copy');
+      }
+
+      // Remove the selections - NOTE: Should use
+      // removeRange(range) when it is supported
+      window.getSelection().removeAllRanges();
+    });
+  </script>
+</body>
+
+</html>
