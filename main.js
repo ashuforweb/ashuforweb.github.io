@@ -41,6 +41,9 @@ function fnPrintDate() {
   //  console.log(date.getMinutes()+":"+fmArray);
 //  console.log(date.getSeconds()+":"+fsArray);
   markElem(fhArray.reverse(), 'h');
+  document.getElementById('hb').innerHTML = date.getHours();
   markElem(fmArray.reverse(), 'm');
+  document.getElementById('mb').innerHTML = date.getMinutes();
   markElem(fsArray.reverse(), 's');
+  document.getElementById('sb').innerHTML = date.getSeconds();
 }
