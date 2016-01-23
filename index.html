@@ -2,12 +2,15 @@
 <html>
 
 <head>
+<link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.grey-red.min.css" />
+	<script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
-	<link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.grey-red.min.css" />
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
 	<title>Binary Clock</title>
 	<style media="screen">
-		<style>
-		html,body {
+		<style> html,
+		body {
 			height: 100%;
 		}
 
@@ -27,9 +30,8 @@
 			margin: 0 auto;
 		}
 	</style>
-<script type="text/javascript" src="main.js">
-
-</script>
+	<script type="text/javascript" src="main.js">
+	</script>
 </head>
 
 <body onload="fnRun();">
@@ -39,88 +41,127 @@
 		 Colored FAB button
 		<button class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored">
 		</button>-->
-		<div id='tableContainer-1'>
-			<div id='tableContainer-2'>
-	<table align="center" id="myTable">
-		<tr>
-			<td>
+		<p>
+			This is just an experiment to implement binary clock in pure javascript.
+		</p>
 
-			</td>
-			<td>
-				<button class="mdl-button mdl-js-button mdl-button--fab" id="h4">
-				</button>
-			</td>
-			<td>
-				<button class="mdl-button mdl-js-button mdl-button--fab" id="h3">
-				</button>
-			</td>
-			<td>
-				<button class="mdl-button mdl-js-button mdl-button--fab" id="h2">
-				</button>
-			</td>
-			<td>
-				<button class="mdl-button mdl-js-button mdl-button--fab" id="h1">
-				</button>
-			</td>
-			<td>
-				<button class="mdl-button mdl-js-button mdl-button--fab" id="h0">
-				</button>
-			</td>
-		</tr>
-		<tr>
-			<td>
-				<button class="mdl-button mdl-js-button mdl-button--fab" id="m5">
-				</button>
-			</td>
-			<td>
-				<button class="mdl-button mdl-js-button mdl-button--fab" id="m4">
-				</button>
-			</td>
-			<td>
-				<button class="mdl-button mdl-js-button mdl-button--fab" id="m3">
-				</button>
-			</td>
-			<td>
-				<button class="mdl-button mdl-js-button mdl-button--fab" id="m2">
-				</button>
-			</td>
-			<td>
-				<button class="mdl-button mdl-js-button mdl-button--fab" id="m1">
-				</button>
-			</td>
-			<td>
-				<button class="mdl-button mdl-js-button mdl-button--fab" id="m0">
-				</button>
-			</td>
-		</tr>
-		<tr>
-			<td>
-				<button class="mdl-button mdl-js-button mdl-button--fab" id="s5">
-				</button>
-			</td>
-			<td>
-				<button class="mdl-button mdl-js-button mdl-button--fab" id="s4">
-				</button>
-			</td>
-			<td>
-				<button class="mdl-button mdl-js-button mdl-button--fab" id="s3">
-				</button>
-			</td>
-			<td>
-				<button class="mdl-button mdl-js-button mdl-button--fab" id="s2">
-				</button>
-			</td>
-			<td>
-				<button class="mdl-button mdl-js-button mdl-button--fab" id="s1">
-				</button>
-			</td>
-			<td>
-				<button class="mdl-button mdl-js-button mdl-button--fab" id="s0">
-				</button>
-			</td>
-		</tr>
-</div>
-</div>
+		<b>	feedbacks are welcome.<b>
+
+	<div id='tableContainer-1'>
+		<div id='tableContainer-2'>
+			<table align="center" id="myTable">
+				<tr>
+					<td>
+						<button class="mdl-button mdl-js-button mdl-button--fab" >
+						</button>
+					</td>
+					<td>
+						<button class="mdl-button mdl-js-button mdl-button--fab" id="h4">
+						</button>
+					</td>
+					<td>
+						<button class="mdl-button mdl-js-button mdl-button--fab" id="h3">
+						</button>
+					</td>
+					<td>
+						<button class="mdl-button mdl-js-button mdl-button--fab" id="h2">
+						</button>
+					</td>
+					<td>
+						<button class="mdl-button mdl-js-button mdl-button--fab" id="h1">
+						</button>
+					</td>
+					<td>
+						<button class="mdl-button mdl-js-button mdl-button--fab" id="h0">
+						</button>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<button class="mdl-button mdl-js-button mdl-button--fab" id="m5">
+						</button>
+					</td>
+					<td>
+						<button class="mdl-button mdl-js-button mdl-button--fab" id="m4">
+						</button>
+					</td>
+					<td>
+						<button class="mdl-button mdl-js-button mdl-button--fab" id="m3">
+						</button>
+					</td>
+					<td>
+						<button class="mdl-button mdl-js-button mdl-button--fab" id="m2">
+						</button>
+					</td>
+					<td>
+						<button class="mdl-button mdl-js-button mdl-button--fab" id="m1">
+						</button>
+					</td>
+					<td>
+						<button class="mdl-button mdl-js-button mdl-button--fab" id="m0">
+						</button>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<button class="mdl-button mdl-js-button mdl-button--fab" id="s5">
+						</button>
+					</td>
+					<td>
+						<button class="mdl-button mdl-js-button mdl-button--fab" id="s4">
+						</button>
+					</td>
+					<td>
+						<button class="mdl-button mdl-js-button mdl-button--fab" id="s3">
+						</button>
+					</td>
+					<td>
+						<button class="mdl-button mdl-js-button mdl-button--fab" id="s2">
+						</button>
+					</td>
+					<td>
+						<button class="mdl-button mdl-js-button mdl-button--fab" id="s1">
+						</button>
+					</td>
+					<td>
+						<button class="mdl-button mdl-js-button mdl-button--fab" id="s0">
+						</button>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<button class="mdl-button mdl-js-button mdl-button--fab" disabled>
+							2<sup>5</sup>
+						</button>
+					</td>
+					<td>
+						<button class="mdl-button mdl-js-button mdl-button--fab" disabled>
+							2<sup>4</sup>
+						</button>
+					</td>
+					<td>
+						<button class="mdl-button mdl-js-button mdl-button--fab" disabled>
+							2<sup>3</sup>
+						</button>
+					</td>
+					<td>
+						<button class="mdl-button mdl-js-button mdl-button--fab" disabled>
+							2<sup>2</sup>
+						</button>
+					</td>
+					<td>
+						<button class="mdl-button mdl-js-button mdl-button--fab" disabled>
+							2<sup>1</sup>
+						</button>
+					</td>
+					<td>
+						<button class="mdl-button mdl-js-button mdl-button--fab" disabled>
+							2<sup>0</sup>
+						</button>
+					</td>
+				</tr>
+		</div>
+	</div>
 	</table>
 </body>
 
