@@ -9,7 +9,7 @@ function markElem(element, index, array) {
     console.log(document.getElementById('h'+index.toString()));
   } else {
     //  document.getElementById('h'+index.toString()).className = document.getElementById('h'+index.toString()).className.replace(" mdl-button--colored","");
-    console.log(document.getElementById('h'+index.toString()));
+    //console.log(document.getElementById('h'+index.toString()));
   }
 
 }
