@@ -1,5 +1,5 @@
 function fnRun() {
-  setInterval(fnPrintDate, 1000);
+  setInterval(fnPrintDate, 1/500);
 }
 
 function markElem(arr, e) {
@@ -27,6 +27,7 @@ function fnPrintDate() {
   hArray = date.getHours().toString(2).split('');
   mArray = date.getMinutes().toString(2).split('');
   sArray = date.getSeconds().toString(2).split('');
+  msArray = date.getMilliseconds().toString(2).split('');
   var hfArray = new Array(5-hArray.length);
   //var mhfArray = hfArray.fill(0);
   var fhArray = hfArray.fill(0).concat(hArray);
@@ -34,6 +35,8 @@ function fnPrintDate() {
   var fmArray = mfArray.fill(0).concat(mArray);
   var sfArray = new Array(6-sArray.length);
   var fsArray = sfArray.fill(0).concat(sArray);
+  var msfArray = new Array(10-msArray.length);
+  var fmsArray = msfArray.fill(0).concat(msArray);
 //  hArray.length=5;
 //  mArray.length=6;
 //  sArray.length=6;
@@ -46,4 +49,6 @@ function fnPrintDate() {
   document.getElementById('mb').innerHTML = date.getMinutes();
   markElem(fsArray.reverse(), 's');
   document.getElementById('sb').innerHTML = date.getSeconds();
+  markElem(fmsArray.reverse(),'ms');
+  document.getElementById('msb').innerHTML = date.getMilliseconds();
 }
