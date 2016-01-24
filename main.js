@@ -37,9 +37,6 @@ function fnPrintDate() {
   var fsArray = sfArray.fill(0).concat(sArray);
   var msfArray = new Array(10-msArray.length);
   var fmsArray = msfArray.fill(0).concat(msArray);
-//  hArray.length=5;
-//  mArray.length=6;
-//  sArray.length=6;
   //console.log(date.getHours()+":"+fhArray);
   //  console.log(date.getMinutes()+":"+fmArray);
 //  console.log(date.getSeconds()+":"+fsArray);
