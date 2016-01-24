@@ -10,13 +10,9 @@ for(var j=0; j<arr.length;j++){
   for (var i = 0; i < arr.length; i++) {
 
     if (arr[i] == "1") {
-      //document.getElementById('h'+index).className();
-      //console.log(hArray);
       document.getElementById(e + i.toString()).className += " mdl-button--colored mdl-button--raised";
-      //console.log(document.getElementById('h'+index.toString()));
     } else {
-      document.getElementById(e + i.toString()).className = document.getElementById(e + i.toString()).className.replace(" mdl-button--colored mdl-button--raised", "");
-      //console.log(document.getElementById('h'+index.toString()));
+      document.getElementById(e + i.toString()).className = document.getElementById(e + i.toString()).className.replace(" mdl-button--colored mdl-button--raised", "");      //console.log(document.getElementById('h'+index.toString()));
     }
   }
 }
@@ -29,7 +25,6 @@ function fnPrintDate() {
   sArray = date.getSeconds().toString(2).split('');
   msArray = date.getMilliseconds().toString(2).split('');
   var hfArray = new Array(5-hArray.length);
-  //var mhfArray = hfArray.fill(0);
   var fhArray = hfArray.fill(0).concat(hArray);
   var mfArray = new Array(6-mArray.length);
   var fmArray = mfArray.fill(0).concat(mArray);
@@ -37,9 +32,6 @@ function fnPrintDate() {
   var fsArray = sfArray.fill(0).concat(sArray);
   var msfArray = new Array(10-msArray.length);
   var fmsArray = msfArray.fill(0).concat(msArray);
-  //console.log(date.getHours()+":"+fhArray);
-  //  console.log(date.getMinutes()+":"+fmArray);
-//  console.log(date.getSeconds()+":"+fsArray);
   markElem(fhArray.reverse(), 'h');
   document.getElementById('hb').innerHTML = date.getHours();
   markElem(fmArray.reverse(), 'm');
