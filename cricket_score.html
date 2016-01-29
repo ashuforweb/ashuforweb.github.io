@@ -17,7 +17,6 @@
       font-size: 30px;
       margin-top: 30px;
       height: 100px;
-
     }
   </style>
   <title>Cricket Score</title>
@@ -26,19 +25,19 @@
 <body onload="fnRun();">
   <h1 id='score'></h1>
   <script type="text/javascript">
-  function fnRun() {
-    setInterval(fnRefresh, 1000);
-  }
+    function fnRun() {
+      setInterval(fnRefresh, 1000);
+    }
 
     function fnRefresh() {
       var date = new Date();
-     //console.log(date.getHours()+":"+date.getMinutes()+":"+date.getSeconds());
+      //console.log(date.getHours()+":"+date.getMinutes()+":"+date.getSeconds());
       var myDataRef = new Firebase('https://ashcricket.firebaseio.com/');
 
       myDataRef.on('child_added', function(snapshot) {
         //var score = snapshot.val();
         document.getElementById('score').innerHTML = snapshot.val();
-      //  console.log(snapshot.val());
+        //  console.log(snapshot.val());
       });
       //console.log("Ro Raha hoon main");
     }
