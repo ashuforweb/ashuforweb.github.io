@@ -1,4 +1,4 @@
-body{
+body {
   font-family: "Roboto", sans-serif;
 }
 .mdinput {
@@ -11,13 +11,12 @@ body{
   height: 300px;
   color: #FFFFFF;
 }
-p:first-letter {
+p#int:first-letter {
   margin-top: 100px;
-		font-size: 30px;
-    font-weight: bold;
-	}
-
-a{
+  font-size: 30px;
+  font-weight: bold;
+}
+a {
   text-decoration: none;
-  color:#2196F3;
+  color: #2196F3;
 }
