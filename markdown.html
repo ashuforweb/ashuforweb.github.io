@@ -19,44 +19,43 @@
 <body>
 	<!-- Always shows a header, even in smaller screens. -->
 	<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-	  <header class="mdl-layout__header">
-	    <div class="mdl-layout__header-row">
-	      <!-- Title -->
-	      <span class="mdl-layout-title">Markdown Editor</span>
-	      <!-- Add spacer, to align navigation to the right -->
-	      <div class="mdl-layout-spacer"></div>
-	      <!-- Navigation. We hide it in small screens. -->
-	      <nav class="mdl-navigation mdl-layout--large-screen-only">
-	      </nav>
-	    </div>
-	  </header>
-	  <div class="mdl-layout__drawer">
-	    <span class="mdl-layout-title">Markdown Editor</span>
-	    <nav class="mdl-navigation">
+		<header class="mdl-layout__header">
+			<div class="mdl-layout__header-row">
+				<!-- Title -->
+				<span class="mdl-layout-title">Markdown Editor</span>
+				<!-- Add spacer, to align navigation to the right -->
+				<div class="mdl-layout-spacer"></div>
+				<!-- Navigation. We hide it in small screens. -->
+				<nav class="mdl-navigation mdl-layout--large-screen-only">
+				</nav>
+			</div>
+		</header>
+		<div class="mdl-layout__drawer">
+			<span class="mdl-layout-title">Markdown Editor</span>
+			<nav class="mdl-navigation">
 				<a class="mdl-navigation__link" href="index.html">Ashu's Home</a>
 				<a class="mdl-navigation__link" href="es6.html">ES6</a>
 				<a class="mdl-navigation__link" href="">Link</a>
 				<a class="mdl-navigation__link" href="">Link</a>
-	    </nav>
-	  </div>
-	  <main class="mdl-layout__content">
-	    <div class="page-content">
+			</nav>
+		</div>
+		<main class="mdl-layout__content">
+			<div class="page-content">
 				<!-- Floating Multiline Textfield -->
 				<form action="#">
-				  <div class="mdl-textfield mdl-js-textfield mdinput">
-				    <textarea class="mdl-textfield__input mdinput" type="text" rows= "10" id="md1" ></textarea>
-				    <label class="mdl-textfield__label" for="sample5">Markdown Text</label>
-				  </div>
-					<marked-element markdown="" id="polymermd">
-						<div class="mdout markdown-html" >
+					<div class="mdl-textfield mdl-js-textfield mdinput">
+						<textarea class="mdl-textfield__input mdinput" type="text" rows="10" id="md1"></textarea>
+						<label class="mdl-textfield__label" for="sample5">Markdown Text</label>
+					</div>
+					<marked-element markdown="" id="polymermd" class="mdelem">
+						<div class="mdout markdown-html">
 
 						</div>
-
-  </marked-element>
+					</marked-element>
 				</form>
 
 			</div>
-	  </main>
+		</main>
 	</div>
 </body>
 
