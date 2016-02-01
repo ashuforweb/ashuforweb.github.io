@@ -40,8 +40,11 @@
 			</nav>
 		</div>
 		<main class="mdl-layout__content">
+
 			<div class="page-content">
-				<!-- Floating Multiline Textfield -->
+				<p>
+					This is experiment of Markdown editor using web components through <a href="https://elements.polymer-project.org/elements/marked-element">Polymer</a>. Jusy start typing in the Markdown Text Area and you should be able to see the changes live in the blue area.
+				</p>
 				<form action="#">
 					<div class="mdl-textfield mdl-js-textfield mdinput">
 						<textarea class="mdl-textfield__input mdinput" type="text" rows="10" id="md1"></textarea>
@@ -49,7 +52,7 @@
 					</div>
 					<marked-element markdown="" id="polymermd" class="mdelem">
 						<div class="mdout markdown-html">
-
+// <!-- TODO: Need to add copy to clipboard -->
 						</div>
 					</marked-element>
 				</form>
