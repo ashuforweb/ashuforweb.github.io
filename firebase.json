@@ -1,9 +1,0 @@
-{
-  "firebase": "firenash",
-  "public": ".",
-  "ignore": [
-    "firebase.json",
-    "**/.*",
-    "**/node_modules/**"
-  ]
-}
