@@ -1,0 +1,10 @@
+.mdinput {
+  width: 100%;
+  resize: none;
+}
+.mdout {
+  font-family: "Roboto", sans-serif;
+  background-color: #2196F3;
+  height: 300px;
+  color: #FFFFFF;
+}
