@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <title>Div Grid</title>
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,100,300,900' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <style media="screen">
     body {
       font-family: 'Roboto', sans-serif;
@@ -22,7 +23,7 @@
     .divbtn {
       font-size: 90px;
       float: left;
-      width: 25%;
+      width: 20%;
       height: 100px;
       text-align: center;
       vertical-align: middle;
@@ -40,6 +41,7 @@
     }
 
     .danger {
+      width: 40%;
       font-size: 60px;
       font-weight: bold;
       line-height: 100px;
@@ -48,7 +50,7 @@
 
     .divbtn:hover {
       cursor: pointer;
-      box-shadow: 0 0 20px #909090;
+      box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.75);
     }
 
     .fnscore {
@@ -68,6 +70,10 @@
       height: 100px;
       float: left;
     }
+
+    .icn {
+      font-size: 90px;
+    }
   </style>
 </head>
 
@@ -75,19 +81,20 @@
   <div class="app">
     <div class="fnscore">
 
-<span>1</span>
-<span>2</span>
+      <span>1</span>
+      <span>2</span>
     </div>
     <div class="pad">
-      <div class="divbtn othrs">Lb</div>
-      <div class="divbtn othrs">Bye</div>
-      <div class="divbtn">5</div>
       <div class="divbtn danger">Wk</div>
-      <div class="divbtn othrs">Nb</div>
-      <div class="divbtn">3</div>
+      <div class="divbtn">5</div>
+      <div class="divbtn danger"><i class="material-icons icn">backspace</i></div>
+      <div class="divbtn othrs">Bye</div>
+      <div class="divbtn othrs">Lb</div>
       <div class="divbtn">6</div>
       <div class="divbtn">4</div>
+      <div class="divbtn">3</div>
       <div class="divbtn othrs">Wb</div>
+      <div class="divbtn othrs">Nb</div>
       <div class="divbtn">2</div>
       <div class="divbtn">1</div>
       <div class="divbtn">0</div>
